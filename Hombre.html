@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="fondoNegro.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Mystic Scence</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav-var">
+      <nav>
+        <div class="nav-var">
+          <nav>
+            <div class="dropdown">
+              <a href="Hombre.html" class="navLink">Hombre</a>
+              <div class="dropdown-content">
+                <a href="#estuches">Estuches</a>
+                <a href="#perfumes">Perfumes de Hombre</a>
+              </div>
+            </div>
+
+            <a href="index.html" class="navLink">Inicio</a>
+
+            <div class="dropdown">
+              <a href="Mujer.html" class="navLink">Mujer</a>
+              <div class="dropdown-content">
+                <a href="Mujer.html">Estuches</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <button id="btn-cart" data-quantity="0" class="btn-cart">
+          <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+              <title>icon-cart</title>
+              <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+          </svg>
+          <span class="quantity"></span>
+      </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="foto">
+    <img src="Diseño sin título1.png" alt="a">
+  </section>
+
+  <section class="container-perfumes" id="hombre">
+    <h1 id="estuches">Estuches</h2>
+      <div class="perfumes">
+
+        <div class="perfume-item"><!--LISTO ARMAF TRES NUIT-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/15.jpeg" alt="perfume">
+          <h2>Armarf tres Nuit</h2>
+          <p>₡26.000</p>
+          <button class="cartBtn" data-product-id="1h" data-product-name="Jesus del Pozo Halloween"
+            data-product-price="26000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/15.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+
+        </div>
+        <div class="perfume-item"><!--LISTO CLUB DE NUIT INTENSE-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/13.jpeg" alt="perfume">
+          <h2>Club de nuit intense</h2>
+          <p>₡30.000</p>
+          <button class="cartBtn" data-product-id="2h" data-product-name="Club de nuit intense"
+            data-product-price="30000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/13.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO ARMAF CLUB SILLAGE-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/11.jpeg" alt="perfume">
+          <h2>Armaf Club Sillage Hombre</h2>
+          <p>₡38.000</p>
+          <button class="cartBtn" data-product-id="3h" data-product-name="Armaf Club Sillage Hombre"
+            data-product-price="38000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/11.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Carolina Herrera 212 Men Heroes Forever Young-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/16.jpeg" alt="perfume">
+          <h2>Carolina Herrera 212 Men Heroes Forever Young</h2>
+          <p>₡63.000</p>
+          <button class="cartBtn" data-product-id="4h" data-product-name="Carolina Herrera 212 Men Heroes Forever Young"
+            data-product-price="63000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/16.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Carolina Herrera 212 Tradicional Hombre-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/17.jpeg" alt="perfume">
+          <h2>Carolina Herrera 212 Tradicional Hombre</h2>
+          <p>₡55.000</p>
+          <button class="cartBtn" data-product-id="5h" data-product-name="Carolina Herrera 212 Tradicional Hombre"
+            data-product-price="55000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/17.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Carolina Herrera 212 VIP Black-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/18.jpeg" alt="perfume">
+          <h2>Carolina Herrera 212 VIP Black</h2>
+          <p>₡50.000</p>
+          <button class="cartBtn" data-product-id="6h" data-product-name="Carolina Herrera 212 VIP Black"
+            data-product-price="50000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/18.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Diesel Zero Plus Hombre-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/27.jpeg" alt="perfume">
+          <h2>Diesel Zero Plus Hombre</h2>
+          <p>₡20.000</p>
+          <button class="cartBtn" data-product-id="7h" data-product-name="Diesel Zero Plus Hombre"
+            data-product-price="20000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/27.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Dolce Gabbana Light Blue-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/28.jpeg" alt="perfume">
+          <h2>Dolce Gabbana Light Blue</h2>
+          <p>₡46.000</p>
+          <button class="cartBtn" data-product-id="8h" data-product-name="Dolce Gabbana Light Blue"
+            data-product-price="46000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/28.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Hugo Boss Bottled Mini-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/19.jpeg" alt="perfume">
+          <h2>Hugo Boss Bottled Mini</h2>
+          <p>₡30.000</p>
+          <button class="cartBtn" data-product-id="9h" data-product-name="Hugo Boss Bottled Mini"
+            data-product-price="30000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/19.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Hugo Boss Bottled-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/9.jpeg" alt="perfume">
+          <h2>Hugo Boss Bottled</h2>
+          <p>₡45.000</p>
+          <button class="cartBtn" data-product-id="10h" data-product-name="Hugo Boss Bottled"
+            data-product-price="45000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/9.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Jean Paul Tradicional 3 Piezas hombre-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/20.jpeg" alt="perfume">
+          <h2>Jean Paul Tradicional 3 Piezas hombre</h2>
+          <p>₡56.000</p>
+          <button class="cartBtn" data-product-id="11h" data-product-name="Jean Paul Tradicional 3 Piezas hombre"
+            data-product-price="56000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/20.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Jean Paul Tradicional Hombre-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/14.jpeg" alt="perfume">
+          <h2>Jean Paul Tradicional Hombre</h2>
+          <p>₡54.000</p>
+          <button class="cartBtn" data-product-id="12h" data-product-name="Jean Paul Tradicional Hombre"
+            data-product-price="54000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/14.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Jean Paul Tradicional Hombre Travel--> 
+          <img src="PERFUMES-HOMBRE/ESTUCHES/25.jpeg" alt="perfume">
+          <h2>Jean Paul Tradicional Hombre Travel</h2>
+          <p>₡58.000</p>
+          <button class="cartBtn" data-product-id="13h" data-product-name="Jean Paul Tradicional Hombre"
+            data-product-price="58000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/25.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Jesus del Pozo Halloween-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/1.jpeg" alt="perfume">
+          <h2>Jesus del Pozo Halloween</h2>
+          <p>₡30.000</p>
+          <button class="cartBtn" data-product-id="14h" data-product-name="Jesus del Pozo Halloween"
+            data-product-price="30000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/1.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+
+        </div>
+        <div class="perfume-item"><!--LISTO Paco Rabanne 1 Million Travel-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/21.jpeg" alt="perfume">
+          <h2>Paco Rabanne 1 Million Travel</h2>
+          <p>₡55.000</p>
+          <button class="cartBtn" data-product-id="15h" data-product-name="Paco Rabanne 1 Million Travel"
+            data-product-price="55000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/21.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+
+        </div>
+        <div class="perfume-item"><!--LISTO Paco Rabanne 1 MILLION-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/22.jpeg" alt="perfume">
+          <h2>Paco Rabanne 1 MILLION</h2>
+          <p>₡60.000</p>
+          <button class="cartBtn" data-product-id="16h" data-product-name="Paco Rabanne 1 MILLION"
+            data-product-price="60000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/22.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+
+        </div>
+        <div class="perfume-item"><!--LISTO Paris Hilton Tradicional-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/6.jpeg" alt="perfume">
+          <h2>Paris Hilton Tradicional</h2>
+          <p>₡28.000</p>
+          <button class="cartBtn" data-product-id="17h" data-product-name="Paris Hilton Tradicional"
+            data-product-price="28000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/6.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Perry Ellis 360 Black-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/10.jpeg" alt="perfume">
+          <h2>Perry Ellis 360 Black</h2>
+          <p>₡27.000</p>
+          <button class="cartBtn" data-product-id="18h" data-product-name="Perry Ellis 360 Black"
+            data-product-price="27000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/10.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Perry Ellis 360 RED Hombre 4 Piezas-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/23.jpeg" alt="perfume">
+          <h2>Perry Ellis 360 RED Hombre 4 Piezas</h2>
+          <p>₡28.000</p>
+          <button class="cartBtn" data-product-id="19h" data-product-name="Perry Ellis 360 RED Hombre 4 Piezas"
+            data-product-price="28000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/23.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Perry Ellis 360 RED Hombre 3 Piezas-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/24.jpeg" alt="perfume">
+          <h2> Perry Ellis 360 RED 3 Piezas</h2>
+          <p>₡25.000</p>
+          <button class="cartBtn" data-product-id="20h" data-product-name=" Perry Ellis 360 RED 3 Piezas"
+            data-product-price="25000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/24.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Perry Ellis 360 Very Blue-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/8.jpeg" alt="perfume">
+          <h2>Perry Ellis 360 Very Blue</h2>
+          <p>₡26.000</p>
+          <button class="cartBtn" data-product-id="21h" data-product-name="Perry Ellis 360 Very Blue"
+            data-product-price="26000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/8.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Perry Ellis 360-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/3.jpeg" alt="perfume">
+          <h2>Perry Ellis 360</h2>
+          <p>₡25.000</p>
+          <button class="cartBtn" data-product-id="22h" data-product-name="Perry Ellis 360"
+            data-product-price="25000" data-product-image="PERFUMES-HOMBRE/ESTUCHES/3.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO Tommy Hilfiger Impact Spark-->
+          <img src="PERFUMES-HOMBRE/ESTUCHES/2.jpeg" alt="perfume">
+          <h2>Tommy Hilfiger Impact Spark</h2>
+          <p>₡32.000</p>
+          <button class="cartBtn" data-product-id="23h" data-product-name="Tommy Hilfiger Impact Spark"
+            data-product-price="32000" data-product-image="PERFUMES-HOMBRE/2.jpeg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+
+      </div>
+  </section>
+
+
+  <section class="container-perfumes" id="hombre">
+    <h1 id="perfumes">Perfumes</h2>
+      <div class="perfumes">
+
+        <div class="perfume-item"><!--LISTO ANIMALE TRADICIONAL HOMBRE 200 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/1.jpg" alt="perfume">
+          <h2>ANIMALE TRADICIONAL HOMBRE 200 ML</h2>
+          <p>₡26.500</p>
+          <button class="cartBtn" data-product-id="1.1h" data-product-name="ANIMALE TRADICIONAL HOMBRE 200 ML"
+            data-product-price="26500" data-product-image="PERFUMES-HOMBRE/PERFUMES/1.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO ANTONIO BANDERAS BLUE SEDUCTION HOMBRE 100 ML EDT-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/2.jpg" alt="perfume">
+          <h2>ANTONIO BANDERAS BLUE SEDUCTION HOMBRE 100 ML</h2>
+          <p>₡15.500</p>
+          <button class="cartBtn" data-product-id="2.1h" data-product-name="ANTONIO BANDERAS BLUE SEDUCTION HOMBRE 100 ML"
+            data-product-price="15500" data-product-image="PERFUMES-HOMBRE/PERFUMES/2.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO ANTONIO BANDERAS KING OF SEDUCTION 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/3.jpg" alt="perfume">
+          <h2>ANTONIO BANDERAS KING OF SEDUCTION 100 ML</h2>
+          <p>₡18.000</p>
+          <button class="cartBtn" data-product-id="3.1h" data-product-name="ANTONIO BANDERAS KING OF SEDUCTION 100 ML"
+            data-product-price="18000" data-product-image="PERFUMES-HOMBRE/PERFUMES/3.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO ANTONIO BANDERAS KING OF SEDUCTION ABSOLUTE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/4.jpg" alt="perfume">
+          <h2>ANTONIO BANDERAS KING OF SEDUCTION ABSOLUTE 100 ML</h2>
+          <p>₡18.000</p>
+          <button class="cartBtn" data-product-id="4.1h" data-product-name="ANTONIO BANDERAS KING OF SEDUCTION ABSOLUTE 100 ML"
+            data-product-price="18000" data-product-image="PERFUMES-HOMBRE/PERFUMES/4.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO ARMAF CLUB DE NUIT URBAN HOMBRE 105 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/5.jpg" alt="perfume">
+          <h2>ARMAF CLUB DE NUIT URBAN HOMBRE 105 ML EDP</h2>
+          <p>₡22.500</p>
+          <button class="cartBtn" data-product-id="5.1h" data-product-name="ARMAF CLUB DE NUIT URBAN HOMBRE 105 ML EDP"
+            data-product-price="22500" data-product-image="PERFUMES-HOMBRE/PERFUMES/5.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CALVIN KLEIN ETERNITY HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/6.jpg" alt="perfume">
+          <h2>CALVIN KLEIN ETERNITY HOMBRE 100 ML</h2>
+          <p>₡26.000</p>
+          <button class="cartBtn" data-product-id="6.1h" data-product-name="CALVIN KLEIN ETERNITY HOMBRE 100 ML"
+            data-product-price="26000" data-product-image="PERFUMES-HOMBRE/PERFUMES/6.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CAROLINA HERRERA 212 VIP HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/7.jpg" alt="perfume">
+          <h2>CAROLINA HERRERA 212 VIP HOMBRE 100 ML</h2>
+          <p>₡38.000</p>
+          <button class="cartBtn" data-product-id="7.1h" data-product-name="CAROLINA HERRERA 212 VIP HOMBRE 100 ML"
+            data-product-price="38000" data-product-image="PERFUMES-HOMBRE/PERFUMES/7.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CAROLINA HERRERA BAD BOY COBALT 150 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/8.jpg" alt="perfume">
+          <h2>CAROLINA HERRERA BAD BOY COBALT 150 ML</h2>
+          <p>₡63.500</p>
+          <button class="cartBtn" data-product-id="8.1h" data-product-name="CAROLINA HERRERA BAD BOY COBALT 150 ML"
+            data-product-price="63500" data-product-image="PERFUMES-HOMBRE/PERFUMES/8.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CAROLINA HERRERA CH HC HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/9.jpg" alt="perfume">
+          <h2>CAROLINA HERRERA CH HC HOMBRE 100 ML</h2>
+          <p>₡60.000</p>
+          <button class="cartBtn" data-product-id="9.1h" data-product-name="CAROLINA HERRERA CH HC HOMBRE 100 ML"
+            data-product-price="60000" data-product-image="PERFUMES-HOMBRE/PERFUMES/9.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CAROLINA HERRERA HERRERA TRADICIONAL HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/10.jpg" alt="perfume">
+          <h2>CAROLINA HERRERA HERRERA TRADICIONAL HOMBRE 100 ML</h2>
+          <p>₡32.500</p>
+          <button class="cartBtn" data-product-id="10.1h" data-product-name="CAROLINA HERRERA HERRERA TRADICIONAL HOMBRE 100 ML"
+            data-product-price="32500" data-product-image="PERFUMES-HOMBRE/PERFUMES/10.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CHANEL BLEU 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/11.jpg" alt="perfume">
+          <h2>CHANEL BLEU 100 ML</h2>
+          <p>₡80.000</p>
+          <button class="cartBtn" data-product-id="11.1h" data-product-name="CHANEL BLEU 100 ML"
+            data-product-price="80000" data-product-image="PERFUMES-HOMBRE/PERFUMES/11.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CHRISTIAN DIOR HOMME INTENSE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/12.jpg" alt="perfume">
+          <h2>CHRISTIAN DIOR HOMME INTENSE 100 ML</h2>
+          <p>₡68.000</p>
+          <button class="cartBtn" data-product-id="12.1h" data-product-name="CHRISTIAN DIOR HOMME INTENSE 100 ML"
+            data-product-price="68000" data-product-image="PERFUMES-HOMBRE/PERFUMES/12.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO CHRISTIAN DIOR SAUVAGE 100 ML--> 
+          <img src="PERFUMES-HOMBRE/PERFUMES/13.jpg" alt="perfume">
+          <h2>CHRISTIAN DIOR SAUVAGE 100 ML</h2>
+          <p>₡87.000</p>
+          <button class="cartBtn" data-product-id="13.1h" data-product-name="CHRISTIAN DIOR SAUVAGE 100 ML EDT"
+            data-product-price="87000" data-product-image="PERFUMES-HOMBRE/PERFUMES/13.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO DOLCE GABBANA LIGHT BLUE HOMBRE 125 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/14.jpg" alt="perfume">
+          <h2>DOLCE GABBANA LIGHT BLUE HOMBRE 125 ML</h2>
+          <p>₡30.000</p>
+          <button class="cartBtn" data-product-id="14.1h" data-product-name="DOLCE GABBANA LIGHT BLUE HOMBRE 125 ML"
+            data-product-price="30000" data-product-image="PERFUMES-HOMBRE/PERFUMES/14.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+
+        </div>
+        <div class="perfume-item"><!--DOLCE GABBANA LIGHT BLUE HOMBRE 200 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/15.jpg" alt="perfume">
+          <h2>DOLCE GABBANA LIGHT BLUE HOMBRE 200 ML</h2>
+          <p>₡35.000</p>
+          <button class="cartBtn" data-product-id="15.1h" data-product-name="DOLCE GABBANA LIGHT BLUE HOMBRE 200 ML"
+            data-product-price="35000" data-product-image="PERFUMES-HOMBRE/PERFUMES/15.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+
+        </div>
+        <div class="perfume-item"><!--LISTO DOLCE GABBANA THE ONE HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/16.jpg" alt="perfume">
+          <h2>DOLCE GABBANA THE ONE HOMBRE 100 ML</h2>
+          <p>₡35.000</p>
+          <button class="cartBtn" data-product-id="16.1h" data-product-name="DOLCE GABBANA THE ONE HOMBRE 100 ML"
+            data-product-price="35000" data-product-image="PERFUMES-HOMBRE/PERFUMES/16.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+
+        </div>
+        <div class="perfume-item"><!--LISTO GIORGIO ARMANI ACQUA DI GIO TRADICIONAL HOMBRE 125 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/17.jpg" alt="perfume">
+          <h2>GIORGIO ARMANI ACQUA DI GIO TRADICIONAL HOMBRE 125 ML</h2>
+          <p>₡54.000</p>
+          <button class="cartBtn" data-product-id="17.1h" data-product-name="GIORGIO ARMANI ACQUA DI GIO TRADICIONAL HOMBRE 125 ML"
+            data-product-price="54000" data-product-image="PERFUMES-HOMBRE/PERFUMES/17.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO HUGO BOSS BOTTLED 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/18.jpg" alt="perfume">
+          <h2>HUGO BOSS BOTTLED 100 ML</h2>
+          <p>₡42.000</p>
+          <button class="cartBtn" data-product-id="18.1h" data-product-name="HUGO BOSS BOTTLED 100 ML"
+            data-product-price="42000" data-product-image="PERFUMES-HOMBRE/PERFUMES/18.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO HUGO BOSS DARK BLUE 75 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/19.jpg" alt="perfume">
+          <h2>HUGO BOSS DARK BLUE 75 ML</h2>
+          <p>₡21.000</p>
+          <button class="cartBtn" data-product-id="19.1h" data-product-name="HUGO BOSS DARK BLUE 75 ML"
+            data-product-price="21000" data-product-image="PERFUMES-HOMBRE/PERFUMES/19.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO HUGO BOSS IN MOTION 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/20.jpg" alt="perfume">
+          <h2>HUGO BOSS IN MOTION 100 ML</h2>
+          <p>₡22.000</p>
+          <button class="cartBtn" data-product-id="20.1h" data-product-name="HUGO BOSS IN MOTION 100 ML EDT"
+            data-product-price="22000" data-product-image="PERFUMES-HOMBRE/PERFUMES/20.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO JEAN PAUL TRADICIONAL HOMBRE 125 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/21.jpg" alt="perfume">
+          <h2>JEAN PAUL TRADICIONAL HOMBRE 125 ML</h2>
+          <p>₡48.000</p>
+          <button class="cartBtn" data-product-id="21.1h" data-product-name="JEAN PAUL TRADICIONAL HOMBRE 125 ML"
+            data-product-price="48000" data-product-image="PERFUMES-HOMBRE/PERFUMES/21.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO LATTAFA HAYAATI HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/22.jpg" alt="perfume">
+          <h2>LATTAFA HAYAATI HOMBRE 100 ML</h2>
+          <p>₡18.000</p>
+          <button class="cartBtn" data-product-id="22.1h" data-product-name="LATTAFA HAYAATI HOMBRE 100 ML"
+            data-product-price="18000" data-product-image="PERFUMES-HOMBRE/PERFUMES/22.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO LIZ CLAIBORNE CURVE CHILL HOMBRE 125 ML COLOG-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/23.jpg" alt="perfume">
+          <h2>LIZ CLAIBORNE CURVE CHILL HOMBRE 125 ML COLOG</h2>
+          <p>₡16.000</p>
+          <button class="cartBtn" data-product-id="23.1h" data-product-name="LIZ CLAIBORNE CURVE CHILL HOMBRE 125 ML COLOG"
+            data-product-price="16000" data-product-image="PERFUMES-HOMBRE/PERFUMES/23.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO LIZ CLAIBORNE CURVE CONNECT HOMBRE 125 ML COLOGNE-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/24.jpg" alt="perfume">
+          <h2>LIZ CLAIBORNE CURVE CONNECT HOMBRE 125 ML COLOGNE</h2>
+          <p>₡16.500</p>
+          <button class="cartBtn" data-product-id="24.1h" data-product-name="LIZ CLAIBORNE CURVE CONNECT HOMBRE 125 ML COLOGNE"
+            data-product-price="16500" data-product-image="PERFUMES-HOMBRE/PERFUMES/24.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO LIZ CLAIBORNE CURVE WAVE HOMBRE 100 ML COLOGNE-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/25.jpg" alt="perfume">
+          <h2>LIZ CLAIBORNE CURVE WAVE HOMBRE 100 ML COLOGNE</h2>
+          <p>₡16.500</p>
+          <button class="cartBtn" data-product-id="25.1h" data-product-name="LIZ CLAIBORNE CURVE WAVE HOMBRE 100 ML COLOGNE"
+            data-product-price="16500" data-product-image="PERFUMES-HOMBRE/PERFUMES/25.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO NAUTICA BLUE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/26.jpg" alt="perfume">
+          <h2>NAUTICA BLUE 100 ML</h2>
+          <p>₡17.000</p>
+          <button class="cartBtn" data-product-id="26.1h" data-product-name="NAUTICA BLUE 100 ML"
+            data-product-price="17000" data-product-image="PERFUMES-HOMBRE/PERFUMES/26.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO NAUTICA TRADICIONAL 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/27.jpg" alt="perfume">
+          <h2>NAUTICA TRADICIONAL 100 ML</h2>
+          <p>₡16.500</p>
+          <button class="cartBtn" data-product-id="27.1h" data-product-name="NAUTICA TRADICIONAL 100 ML"
+            data-product-price="16500" data-product-image="PERFUMES-HOMBRE/PERFUMES/27.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO NAUTICA VOYAGE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/28.jpg" alt="perfume">
+          <h2>NAUTICA VOYAGE 100 ML</h2>
+          <p>₡16.500</p>
+          <button class="cartBtn" data-product-id="28.1h" data-product-name="NAUTICA VOYAGE 100 ML"
+            data-product-price="16500" data-product-image="PERFUMES-HOMBRE/PERFUMES/28.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO NAUTICA VOYAGE N-83 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/29.jpg" alt="perfume">
+          <h2>NAUTICA VOYAGE N-83 100 ML</h2>
+          <p>₡18.500</p>
+          <button class="cartBtn" data-product-id="29.1h" data-product-name="NAUTICA VOYAGE N-83 100 ML"
+            data-product-price="18500" data-product-image="PERFUMES-HOMBRE/PERFUMES/29.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO PACO RABANNE INVICTUS VICTORY EXTREME 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/31.jpg" alt="perfume">
+          <h2>PACO RABANNE INVICTUS VICTORY EXTREME 100 ML</h2>
+          <p>₡50.000</p>
+          <button class="cartBtn" data-product-id="31.1h" data-product-name="PACO RABANNE INVICTUS VICTORY EXTREME 100 MLL"
+            data-product-price="50000" data-product-image="PERFUMES-HOMBRE/PERFUMES/31.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO PACO RABANNE PHANTOM 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/32.jpg" alt="perfume">
+          <h2>PACO RABANNE PHANTOM 100 ML</h2>
+          <p>₡50.000</p>
+          <button class="cartBtn" data-product-id="32.1h" data-product-name="PACO RABANNE PHANTOM 100 ML"
+            data-product-price="50000" data-product-image="PERFUMES-HOMBRE/PERFUMES/32.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO PERRY ELLIS 360 RED HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/33.jpg" alt="perfume">
+          <h2>PERRY ELLIS 360 RED HOMBRE 100 ML</h2>
+          <p>₡21.000</p>
+          <button class="cartBtn" data-product-id="33.1h" data-product-name="PERRY ELLIS 360 RED HOMBRE 100 ML"
+            data-product-price="21000" data-product-image="PERFUMES-HOMBRE/PERFUMES/33.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO PERRY ELLIS 360 TRADICIONAL HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/34.jpg" alt="perfume">
+          <h2>PERRY ELLIS 360 TRADICIONAL HOMBRE 100 ML</h2>
+          <p>₡19.500</p>
+          <button class="cartBtn" data-product-id="34.1h" data-product-name="PERRY ELLIS 360 TRADICIONAL HOMBRE 100 ML"
+            data-product-price="19500" data-product-image="PERFUMES-HOMBRE/PERFUMES/34.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO TOMMY HILFIGER TOMMY HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/35.jpg" alt="perfume">
+          <h2>TOMMY HILFIGER TOMMY HOMBRE 100 ML</h2>
+          <p>₡20.000</p>
+          <button class="cartBtn" data-product-id="35.1h" data-product-name="TOMMY HILFIGER TOMMY HOMBRE 100 ML"
+            data-product-price="20000" data-product-image="PERFUMES-HOMBRE/PERFUMES/35.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO VERSACE DYLAN BLUE MEN 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/36.jpg" alt="perfume">
+          <h2>VERSACE DYLAN BLUE MEN 100 ML</h2>
+          <p>₡33.500</p>
+          <button class="cartBtn" data-product-id="36.1h" data-product-name="VERSACE DYLAN BLUE MEN 100 ML"
+            data-product-price="33500" data-product-image="PERFUMES-HOMBRE/PERFUMES/36.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO VERSACE EROS HOMBRE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/37.jpg" alt="perfume">
+          <h2>VERSACE EROS HOMBRE 100 ML</h2>
+          <p>₡46.500</p>
+          <button class="cartBtn" data-product-id="37.1h" data-product-name="VERSACE EROS HOMBRE 100 ML"
+            data-product-price="46500" data-product-image="PERFUMES-HOMBRE/PERFUMES/37.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO VERSACE EROS HOMBRE 200 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/38.jpg" alt="perfume">
+          <h2>VERSACE EROS HOMBRE 200 ML</h2>
+          <p>₡50.500</p>
+          <button class="cartBtn" data-product-id="38.1h" data-product-name="VERSACE EROS HOMBRE 200 ML"
+            data-product-price="50500" data-product-image="PERFUMES-HOMBRE/PERFUMES/38.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO VERSACE FRAICHE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/39.jpg" alt="perfume">
+          <h2>VERSACE FRAICHE 100 ML</h2>
+          <p>₡30.500</p>
+          <button class="cartBtn" data-product-id="39.1h" data-product-name="VERSACE FRAICHE 100 ML"
+            data-product-price="30500" data-product-image="PERFUMES-HOMBRE/PERFUMES/39.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+        <div class="perfume-item"><!--LISTO VICTORINOX SWISS ARMY ALTITUDE 100 ML-->
+          <img src="PERFUMES-HOMBRE/PERFUMES/40.jpg" alt="perfume">
+          <h2>VICTORINOX SWISS ARMY ALTITUDE 100 ML</h2>
+          <p>₡21.000</p>
+          <button class="cartBtn" data-product-id="40.1h" data-product-name="VICTORINOX SWISS ARMY ALTITUDE 100 ML"
+            data-product-price="21000" data-product-image="PERFUMES-HOMBRE/PERFUMES/40.jpg" ; data-modal="#jsModalCarrito">
+            <svg class="cart" fill="white" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+              </path>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+  </section>
+
+  <div class="modal" id="jsModalCarrito">
+    <div class="modal__container">
+      <button type="button" class="modal__close fa-solid fa-xmark jsModalClose"></button>
+      <div class="modal__info">
+        <div class="modal__header">
+          <h2><i class="fa-brands fa-opencart"></i> Carrito</h2>
+        </div>
+        <div class="modal__body">
+          <div class="modal__list" id="cartItems">
+            <!-- Los productos se agregarán aquí dinámicamente -->
+          </div>
+        </div>
+        <div class="modal__footer">
+          <div class="modal__list-price">
+            <ul>
+              <li>Subtotal: <strong id="cartSubtotal">₡0.00</strong></li>
+              <li>Descuento: <strong id="cartDiscount">₡0.00</strong></li>
+            </ul>
+            <h4 class="modal__total-cart" id="cartTotal"> Total: ₡0.00</h4>
+          </div>
+          <div class="modal__btns">
+            <button class="btn-primary">Comprar Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button>
+    <ul class="wrapper">
+      <a href="https://www.facebook.com/share/wRJTr6jh5NESP57h/?mibextid=LQQJ4d" target="_blank"><li class="icon facebook">
+        <span class="tooltip">Facebook</span>
+        <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+          </path>
+        </svg>
+      </li></a>
+      <a href="https://www.instagram.com/mystic.scents.cr?igsh=bDBnNjFneDJ0cXB5&utm_source=qr " target="_blank"><li class="icon instagram">
+        <span class="tooltip">Instagram</span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+          </path>
+        </svg>
+      </li></a>
+    </ul>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
